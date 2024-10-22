@@ -60,7 +60,7 @@ git remote add origin https://github.com/Gingesmallfish/docs-demo.git
 ## 推送项目到github
 
 ```gitignore
-git push -u origin maseter
+git push -u origin main
 ```
 
 ## 选择github actions
@@ -88,7 +88,7 @@ name: Deploy VitePress site to Pages
 
 on:
   push:
-    branches: [master]
+    branches: [main]
 
 # 设置tokenn访问权限
 permissions:
@@ -118,7 +118,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
-          node-version: 18
+          node-version: 20   # 指定需要的node版本 我的版本是20.14.0
           cache: pnpm # 设置缓存
       - name: Setup Pages
         uses: actions/configure-pages@v3  # 在工作流程自动配置GithubPages
