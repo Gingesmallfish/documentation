@@ -13,7 +13,7 @@ export default defineConfig({
 
     //  添加字体
     head: [
-        ["link", { rel: "icon", href: "/logo.png" }],
+        ["link", { rel: "icon", href: "/icon.png" }],
 
         // 谷歌字体
         [
@@ -27,8 +27,6 @@ export default defineConfig({
             lazyLoading: false
         }
     },
-
-
     themeConfig: {
         outlineTitle: '文章目录',
         logo: '/logo.png',

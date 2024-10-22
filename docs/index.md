@@ -7,7 +7,7 @@ hero:
   text: "在线文档"
   tagline: 关注科技最前沿技术
   image:
-      src: /plan.png     # text 和 tagline 区域旁的图片
+      src: /plan.png    # text 和 tagline 区域旁的图片
       alt: plan
   actions:
     - theme: brand
