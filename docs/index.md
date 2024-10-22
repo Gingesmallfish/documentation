@@ -26,6 +26,7 @@ features:
     details: 学会思考，不要人云亦云
 ---
 
-```ts twoslash
+
+::: tip tailwind 演示
 console.log("Hello Wrold")
-```
+:::

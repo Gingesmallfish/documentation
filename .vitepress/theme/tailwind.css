@@ -1,0 +1,25 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+:root {
+    --vp-home-hero-name-color: transparent;
+    --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #bd34fe, #41d1ff);
+    font-family: Inter, sans-serif;
+
+}
+
+
+
+.medium-zoom-image--opened {
+    z-index: 999999;
+}
+
+.VPSidebar {
+    z-index: 9999999; 
+    /* 图片放大的时候侧边栏模糊 */
+   
+   
+}

@@ -1,8 +1,10 @@
 import { defineConfig } from 'vitepress'
 import nav from "./navbar/nav.mjs";
 import sidebar from "./sidebar/sidebar.mjs";
+
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+
     base: "/documentation/",
     lang: 'zh-CN',
     title: "Gingesmallfish文档",
@@ -21,11 +23,14 @@ export default defineConfig({
             { rel: 'preconnect', href: 'https://fonts.googleapis.com' }
         ],
     ],
+
+
     // 代码高亮
     markdown: {
         image: {
             lazyLoading: false
-        }
+        },
+        
     },
     themeConfig: {
         outlineTitle: '文章目录',
@@ -39,6 +44,7 @@ export default defineConfig({
 
         nav: nav,
         sidebar: sidebar,
+       
         // 设置搜索框的样式
         search: {
             provider: "local",
