@@ -1,4 +1,5 @@
-export default {
+import type { SidebarConfig } from '../Types/sidebarNavTypes';
+const sidebar: SidebarConfig = {
     '/博客搭建/VitePress/': [{
         text: '文章目录',
         collapsed: false,
@@ -67,3 +68,4 @@ export default {
     }]
 
 }
+export default sidebar

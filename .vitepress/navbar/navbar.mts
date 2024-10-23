@@ -1,12 +1,4 @@
-// 定义类型参数
-export type NavItem = {
-    text: string;
-    link?: string;
-    activeClass?: string;
-    items?: NavItem[];
-    activeMatch?: string;
-};
-
+import { NavItem } from '../Types/sidebarNavTypes'
 const nav: NavItem[] = [
     { text: '首页', link: '/', activeClass: '首页' },
     {
@@ -27,7 +19,7 @@ const nav: NavItem[] = [
         items: [{
             text: '基础知识',
             items: [
-                { text: 'HTML', link: '/基础知识/HTML/01.基础知识' },
+                { text: 'HTML', link: '/基础知识/html/01.基础知识' },
                 { text: 'CSS', link: '/基础知识/CSS/01.css基础' },
                 { text: 'JS', link: '基础知识/JS/01.js基础' }
             ]

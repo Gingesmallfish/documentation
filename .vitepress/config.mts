@@ -1,13 +1,11 @@
-import { DefaultTheme, defineConfig } from 'vitepress'
-import nav from "./navbar/nav.mts";
-import sidebar from "./sidebar/sidebar.mts";
+import { defineConfig} from 'vitepress'
+import  Nav from './navbar/navbar.mts';
+import  sidebarNavItem from './sidebar/sidebar.mts';
 
-// https://vitepress.dev/reference/site-config
 export default defineConfig({
-
     base: "/documentation/",
     lang: 'zh-CN',
-    title: "Gingesmallfish文档",
+    title: "在线文档",
     description: "在线文档，Vue.JS,React Webpack JavaScript CSS html",
     srcDir: 'docs',
     // 最后的跟新的时间
@@ -24,27 +22,30 @@ export default defineConfig({
         ],
     ],
 
-
     // 代码高亮
     markdown: {
         image: {
             lazyLoading: false
         },
-        
+
     },
+    // 主题配置
     themeConfig: {
         outlineTitle: '文章目录',
         logo: '/logo.png',
         editLink: {
             // 这里是自己的厂库
             pattern: 'https://github.com/Gingesmallfish/Gingesmallfish.github.io',
-            text: '在 github 上编辑此页'
+            text: '在 GitHub 上编辑此页'
         },
-        // https://vitepress.dev/reference/default-theme-config
 
-        nav: nav as DefaultTheme.NavItem[],  
-        sidebar: {...sidebar},
-       
+
+        // 导航栏
+        nav: Nav as any,
+
+        // 侧边栏
+        sidebar: sidebarNavItem as any,
+
         // 设置搜索框的样式
         search: {
             provider: "local",
