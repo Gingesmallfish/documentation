@@ -1,4 +1,13 @@
-export default [
+// 定义类型参数
+export type NavItem = {
+    text: string;
+    link?: string;
+    activeClass?: string;
+    items?: NavItem[];
+    activeMatch?: string;
+};
+
+const nav: NavItem[] = [
     { text: '首页', link: '/', activeClass: '首页' },
     {
         text: '博客搭建',
@@ -34,3 +43,6 @@ export default [
         }]
     }
 ]
+
+
+export default nav

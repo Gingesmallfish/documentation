@@ -1,6 +1,6 @@
-import { defineConfig } from 'vitepress'
-import nav from "./navbar/nav.mjs";
-import sidebar from "./sidebar/sidebar.mjs";
+import { DefaultTheme, defineConfig } from 'vitepress'
+import nav from "./navbar/nav.mts";
+import sidebar from "./sidebar/sidebar.mts";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -42,8 +42,8 @@ export default defineConfig({
         },
         // https://vitepress.dev/reference/default-theme-config
 
-        nav: nav,
-        sidebar: sidebar,
+        nav: nav as DefaultTheme.NavItem[],  
+        sidebar: {...sidebar},
        
         // 设置搜索框的样式
         search: {
