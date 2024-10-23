@@ -1,43 +1,32 @@
 import type { SidebarConfig } from '../Types/sidebarNavTypes';
 const sidebar: SidebarConfig = {
-    '/博客搭建/VitePress/': [
-        {
-            text: '文章目录',
-            collapsed: false,
-            items: [
-                { text: '前言', link: '/博客搭建/VitePress/01.前言' },
-                { text: '创建项目', link: '/博客搭建/VitePress/02.创建项目' },
-                { text: '自定义配置', link: '/博客搭建/VitePress/03.自定义配置' },
-            ]
-        },
-        {
-            text: '主题优化',
-            collapsed: false,
-            items: [
-                { text: '美化主页', link: '/博客搭建/VitePress/04.美化主页' },
-                { text: '主页扩展', link: '/博客搭建/VitePress/05.主页扩展' },
-                { text: '美化文章', link: '/博客搭建/VitePress/06.美化文章' },
-                { text: '文章页扩展', link: '/博客搭建/VitePress/07.文章页扩展' },
-                { text: '美化地址栏icon', link: '/博客搭建/VitePress/08.美化地址栏icon' },
-                { text: '设置搜索栏', link: '/博客搭建/VitePress/09.设置搜索栏' },
-            ]
-        },
-        {
-            text: 'Github Pages部署',
-            collapsed: false,
-            items: [
-                { text: '使用Github Pages部署', link: '/博客搭建/VitePress/使用Github Pages部署' },
-                { text: '补充', link: '/博客搭建/VitePress/补充' },
-            ]
-        }, 
-        {
-            text: '继承视频插件',
-            collapsed: false,
-            items: [
-                { text: '继承视频插件', link: '/博客搭建/VitePress/继承视频插件' },
-            ]
-        }
-    ],
+    '/博客搭建/VitePress/': [{
+        text: '文章目录',
+        collapsed: false,
+        items: [
+            { text: '前言', link: '/博客搭建/VitePress/01.前言' },
+            { text: '创建项目', link: '/博客搭建/VitePress/02.创建项目' },
+            { text: '自定义配置', link: '/博客搭建/VitePress/03.自定义配置' },
+        ]
+    }, {
+        text: '主题优化',
+        collapsed: false,
+        items: [
+            { text: '美化主页', link: '/博客搭建/VitePress/04.美化主页' },
+            { text: '主页扩展', link: '/博客搭建/VitePress/05.主页扩展' },
+            { text: '美化文章', link: '/博客搭建/VitePress/06.美化文章' },
+            { text: '文章页扩展', link: '/博客搭建/VitePress/07.文章页扩展' },
+            { text: '美化地址栏icon', link: '/博客搭建/VitePress/08.美化地址栏icon' },
+            { text: '设置搜索栏', link: '/博客搭建/VitePress/09.设置搜索栏' },
+        ]
+    }, {
+        text: 'Github Pages部署',
+        collapsed: false,
+        items: [
+            { text: '使用Github Pages部署', link: '/博客搭建/VitePress/使用Github Pages部署' },
+            { text: '补充', link: '/博客搭建/VitePress/补充' },
+        ]
+    }],
 
     '/基础知识/html/': [{
         text: 'HTML',

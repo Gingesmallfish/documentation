@@ -8,9 +8,6 @@ importers:
 
   .:
     dependencies:
-      '@vrcd-community/markdown-it-video':
-        specifier: ^1.1.1
-        version: 1.1.1
       vue:
         specifier: ^3.5.12
         version: 3.5.12
@@ -477,9 +474,6 @@ packages:
     peerDependencies:
       vite: ^5.0.0
       vue: ^3.2.25
-
-  '@vrcd-community/markdown-it-video@1.1.1':
-    resolution: {integrity: sha512-Y1RUJawdUL/laFunC8t28Zto6TV0WhstfluvMaBzHVYmbZ0mrNLyqQbpBUh4tKT3khrw8Gua3cA6zqCUK9DCYA==}
 
   '@vue/compiler-core@3.5.12':
     resolution: {integrity: sha512-ISyBTRMmMYagUxhcpyEH0hpXRd/KqDU4ymofPgl2XAkY9ZhQ+h0ovEZJIiPop13UmR/54oA2cgMDjgroRelaEw==}
@@ -1925,8 +1919,6 @@ snapshots:
     dependencies:
       vite: 5.4.9
       vue: 3.5.12
-
-  '@vrcd-community/markdown-it-video@1.1.1': {}
 
   '@vue/compiler-core@3.5.12':
     dependencies:
