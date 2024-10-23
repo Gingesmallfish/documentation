@@ -9,8 +9,7 @@ export default defineConfig({
     description: "在线文档，Vue.JS,React Webpack JavaScript CSS html",
     srcDir: 'docs',
     // 最后的跟新的时间
-    lastUpdated: true,
-
+  
     //  添加字体
     head: [
         ["link", { rel: "icon", href: "/icon.png" }],
@@ -39,7 +38,10 @@ export default defineConfig({
             text: '在 GitHub 上编辑此页'
         },
 
-
+        // 最后跟新时间
+        lastUpdated: {
+            text: '最后更新时间',
+        },
         // 导航栏
         nav: Nav as any,
 

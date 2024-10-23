@@ -18,7 +18,7 @@ hero:
       link: /博客搭建/VitePress/01.前言
 
 features:
-  - title: 小建议 💡
+  - title: 💡小建议 
     details: 选择永远大于努力
   - title: 🧗 努力
     details: 如果做一件事就努力把它做好
@@ -27,6 +27,6 @@ features:
 ---
 
 
-::: tip tailwind 演示
+::: tip JS
 console.log("Hello Wrold")
 :::
