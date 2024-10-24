@@ -20,3 +20,10 @@ export interface SidebarItem {
 export interface SidebarConfig {
     [path: string]: SidebarItem[] | { customKey: SidebarItem[] };
 }
+
+
+export interface ZommeOptions {
+    zIndex?: number;
+    background?: string;
+    container?: HTMLElement; // 修改为HTMLElement类型   
+}
