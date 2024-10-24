@@ -1,7 +1,7 @@
 import { defineConfig} from 'vitepress'
 import  Nav from './navbar/navbar.mts';
 import  sidebarNavItem from './sidebar/sidebar.mts';
-
+import markdownItVideo from "@vrcd-community/markdown-it-video";
 export default defineConfig({
     base: "/documentation/",
     lang: 'zh-CN',
@@ -26,6 +26,11 @@ export default defineConfig({
         image: {
             lazyLoading: false
         },
+        config: (md) => {
+            md.use(markdownItVideo, {
+                bilibili: {width: '100%', height: '387px'}
+            })
+        }
 
     },
     // 主题配置

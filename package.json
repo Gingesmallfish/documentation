@@ -13,9 +13,12 @@
     "docs:preview": "vitepress preview"
   },
   "dependencies": {
+    "@vrcd-community/markdown-it-video": "^1.1.1",
     "vue": "^3.5.12"
   },
   "compilerOptions": {
-    "types": ["vue"]
+    "types": [
+      "vue"
+    ]
   }
 }
