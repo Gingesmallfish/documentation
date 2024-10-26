@@ -9,7 +9,6 @@ import { onMounted, watch, nextTick } from "vue";
 import  {ZommeOptions} from "../Types/sidebarNavTypes";
 import "./tailwind.css";
 
-
 export default {
   extends: DefaultTheme, 
   Layout: () => {

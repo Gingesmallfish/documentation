@@ -7,7 +7,7 @@ module.exports = {
     "./docs/**/*.md",
   ],
   options: {
-    safelist:["html", "markdown-body"],
+    safelist:["html",,"body", "markdown-body"],
   },
   theme: {
     extend: {},

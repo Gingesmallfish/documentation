@@ -45,11 +45,34 @@ const sidebar: SidebarConfig = {
             { text: '表格与多媒体', link: '/基础知识/html/06.表格与多媒体' }
         ]
     }],
-    '/基础知识/css/': [{
+    '/基础知识/CSS/': [{
         text: 'CSS',
-        collapsed: true,
+        collapsed: false,
         items: [
             { text: 'css基础', link: '/基础知识/CSS/01.css基础' }
+        ]
+    }, {
+        text: 'css进阶',
+        collapsed: false,
+        items: [
+            { text: 'css进阶', link: '/基础知识/CSS/02.css进阶' },
+            { text: 'css盒子模型', link: '/基础知识/CSS/03.css盒子模型' },
+            { text: 'css布局', link: '/基础知识/CSS/04.Flex布局' },
+        ]
+    }, {
+        text: "css高级",
+        collapsed: false,
+        items: [
+            { text: "css高级", link: "/基础知识/CSS/05.css高级" },
+        ]
+
+    }, {
+        text: "项目",
+        collapsed: false,
+        items: [
+            { text: "学成在线项目", link: "/基础知识/CSS/学成在线项目" },
+            { text: "小兔鲜项目", link: "/基础知识/CSS/小兔鲜头部页脚" },
+            { text: "小兔鲜中心区域" , link: "/基础知识/CSS/小兔鲜中心区域" },
         ]
     }],
     '/基础知识/js/': [{
