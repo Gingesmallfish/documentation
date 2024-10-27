@@ -1,8 +1,8 @@
 import { NavItem } from '../Types/sidebarNavTypes'
 const nav: NavItem[] = [
-    { text: '首页', link: '/', activeClass: '首页' },
+    { text: '🏷 首页', link: '/', activeClass: '首页' },
     {
-        text: '博客搭建',
+        text: '📖 博客搭建',
         items: [{
             text: '博客搭建',
             items: [{
@@ -15,7 +15,7 @@ const nav: NavItem[] = [
 
     // 基础知识
     {
-        text: '基础知识',
+        text: '🗂️ 基础知识',
         items: [{
             text: '基础知识',
             items: [
@@ -26,7 +26,7 @@ const nav: NavItem[] = [
         }]
     },
     {
-        text: '工具',
+        text: '⚒ 工具',
         items: [{
             text: 'Git',
             items: [

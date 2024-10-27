@@ -67,12 +67,19 @@ const sidebar: SidebarConfig = {
         ]
 
     }, {
+        text: "动画加移动端"
+        , collapsed: false,
+        items: [
+            { text: "动画", link: "/基础知识/CSS/Phon/06.动画基础" },
+            { text: "空间转换", link: "/基础知识/CSS/Phon/07.空间转换" },
+        ],
+    }, {
         text: "项目",
         collapsed: false,
         items: [
             { text: "学成在线项目", link: "/基础知识/CSS/学成在线项目" },
             { text: "小兔鲜项目", link: "/基础知识/CSS/小兔鲜头部页脚" },
-            { text: "小兔鲜中心区域" , link: "/基础知识/CSS/小兔鲜中心区域" },
+            { text: "小兔鲜中心区域", link: "/基础知识/CSS/小兔鲜中心区域" },
         ]
     }],
     '/基础知识/js/': [{
