@@ -72,6 +72,9 @@ const sidebar: SidebarConfig = {
         items: [
             { text: "动画", link: "/基础知识/CSS/Phon/06.动画基础" },
             { text: "空间转换", link: "/基础知识/CSS/Phon/07.空间转换" },
+            { text: "rem基础", link: "/基础知识/CSS/Phon/08.rem基础", },
+            { text: "vm和rem", link: "/基础知识/CSS/Phon/09.vm和rem" },
+            { text: "媒体查询", link: "/基础知识/CSS/Phon/10.媒体查询" },
         ],
     }, {
         text: "项目",
