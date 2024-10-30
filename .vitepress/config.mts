@@ -9,10 +9,10 @@ export default defineConfig({
     description: "在线文档，Vue.JS,React Webpack JavaScript CSS html",
     srcDir: 'docs',
     // 最后的跟新的时间
-  
+
     //  添加字体
     head: [
-        ["link", { rel: "icon", href: "/icon.png" }],
+        ["link", { rel: "icon", href: "/public/icon.png" }],
 
         // 谷歌字体
         [
@@ -30,11 +30,14 @@ export default defineConfig({
             md.use(markdownItVideo, {
                 bilibili: {width: '100%', height: '387px'}
             })
-        }
+        },
+
 
     },
+
     // 主题配置
     themeConfig: {
+
         outlineTitle: '文章目录',
         logo: '/logo.png',
         editLink: {
@@ -78,5 +81,6 @@ export default defineConfig({
         footer: {
             copyright: '姜小鱼版权所有 © 2023-2024 创作不易请尊重他人劳动成果，未经授权禁止转载！',
         },
-    }
+    },
+
 })

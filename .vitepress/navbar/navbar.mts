@@ -33,7 +33,8 @@ const nav: NavItem[] = [
                 { text: '提交规范', link: '/工具/Git/git代码提交规范' }
             ]
         }]
-    }
+    },
+    {text:'前端学习路线',link:'/前端学习路线/01'}
 ]
 
 

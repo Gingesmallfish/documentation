@@ -1,4 +1,5 @@
 // 定义类型参数 nav
+
 export interface NavItem {
     text?: string;
     link?: string;
@@ -25,5 +26,7 @@ export interface SidebarConfig {
 export interface ZommeOptions {
     zIndex?: number;
     background?: string;
-    container?: HTMLElement; // 修改为HTMLElement类型   
+    container?: HTMLElement; // 修改为HTMLElement类型
 }
+
+
