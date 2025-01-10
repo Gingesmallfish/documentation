@@ -85,11 +85,11 @@ const sidebar: SidebarConfig = {
             { text: "小兔鲜中心区域", link: "/基础知识/CSS/小兔鲜中心区域" },
         ]
     }],
-    '/基础知识/js/': [{
-        text: 'JS',
+    '/基础知识/JS/': [{
+        text: 'JavaScript教程',
         collapsed: true,
         items: [
-            { text: 'js基础', link: '/基础知识/JS/01.js基础' }
+            { text: '简介', link: '/基础知识/JS/简介' }
         ]
     }],
     '/工具/Git/': [{

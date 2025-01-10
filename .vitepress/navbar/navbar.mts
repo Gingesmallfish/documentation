@@ -21,7 +21,7 @@ const nav: NavItem[] = [
             items: [
                 { text: 'HTML', link: '/基础知识/html/01.基础知识' },
                 { text: 'CSS', link: '/基础知识/CSS/01.css基础' },
-                { text: 'JS', link: '基础知识/JS/01.js基础' }
+                { text: 'JS', link: '基础知识/JS/简介' }
             ]
         }]
     },
