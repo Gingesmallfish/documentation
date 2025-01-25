@@ -26,7 +26,7 @@ export default defineConfig({
             alias: {
                 '@': resolve(__dirname, '../docs')
             }
-        }
+        },
     },
 
 
@@ -53,8 +53,6 @@ export default defineConfig({
                 bilibili: { width: '100%', height: '387px' }
             })
         },
-
-
     },
 
     // 主题配置
@@ -101,8 +99,8 @@ export default defineConfig({
 
         // 首页页脚
         footer: {
-            copyright: '姜小鱼版权所有 © 2023-2024 创作不易请尊重他人劳动成果，未经授权禁止转载！',
+            message: 'Released under the MIT License.',
+            copyright: '姜小鱼版权所有 © 2023-2024 创作不易请尊重他人劳动成果，未经授权禁止转载！'
         },
     },
-
 })
