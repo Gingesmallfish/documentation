@@ -3,10 +3,6 @@ import Nav from './navbar/navbar.mts';
 import sidebarNavItem from './sidebar/sidebar.mts';
 import { resolve } from 'path'
 import markdownItVideo from "@vrcd-community/markdown-it-video";
-import vue from '@vitejs/plugin-vue'
-import Table from '@/components/Table.vue'
-import ComparisonOperators from '@/components/Comparison-operators.vue'
-
 
 export default defineConfig({
     base: "/documentation/",
@@ -41,13 +37,11 @@ export default defineConfig({
         // 谷歌字体
         [
             'link',
-            { rel: 'preconnect', href: 'https://fonts.googleapis.com' }
+            { rel: 'reconnect', href: 'https://fonts.googleapis.com' }
         ],
     ],
 
-    vue: {
-        plugins: [vue()],
-    },
+
 
     // 代码高亮
     markdown: {
@@ -111,11 +105,4 @@ export default defineConfig({
         },
     },
 
-     // 注册自定义组件
-    vue: {
-        components: {
-            Table,
-            ComparisonOperators
-        }
-    }
 })
