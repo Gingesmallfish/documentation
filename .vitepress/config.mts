@@ -1,8 +1,12 @@
 import { defineConfig, serve } from 'vitepress'
 import Nav from './navbar/navbar.mts';
 import sidebarNavItem from './sidebar/sidebar.mts';
+import { resolve } from 'path'
 import markdownItVideo from "@vrcd-community/markdown-it-video";
 import vue from '@vitejs/plugin-vue'
+import Table from '@/components/Table.vue'
+import ComparisonOperators from '@/components/Comparison-operators.vue'
+
 
 export default defineConfig({
     base: "/documentation/",
@@ -21,6 +25,11 @@ export default defineConfig({
             port: 3000 as number,
             host: '127.0.0.1',
             open: true,
+        },
+        resolve: {
+            alias: {
+                '@': resolve(__dirname, '../docs')
+            }
         }
     },
 
@@ -102,4 +111,11 @@ export default defineConfig({
         },
     },
 
+     // 注册自定义组件
+    vue: {
+        components: {
+            Table,
+            ComparisonOperators
+        }
+    }
 })
