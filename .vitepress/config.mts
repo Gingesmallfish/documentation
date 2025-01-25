@@ -1,18 +1,33 @@
-import { defineConfig} from 'vitepress'
-import  Nav from './navbar/navbar.mts';
-import  sidebarNavItem from './sidebar/sidebar.mts';
+import { defineConfig, serve } from 'vitepress'
+import Nav from './navbar/navbar.mts';
+import sidebarNavItem from './sidebar/sidebar.mts';
 import markdownItVideo from "@vrcd-community/markdown-it-video";
+
+
 export default defineConfig({
     base: "/documentation/",
     lang: 'zh-CN',
     title: "在线文档",
     description: "在线文档，Vue.JS,React Webpack JavaScript CSS html",
     srcDir: 'docs',
-    // 最后的跟新的时间
+
+    // 最后更新时间
+    lastUpdated: true,
+
+
+    // 跟该页面端口号
+    vite: {
+        server: {
+            port: 3000 as number,
+            host: '127.0.0.1',
+            open: true,
+        }
+    },
+
 
     //  添加字体
     head: [
-        ["link", { rel: "icon", href: "/public/icon.png" }],
+        ["link", { rel: "icon", href: "./icon.png" }],
 
         // 谷歌字体
         [
@@ -28,7 +43,7 @@ export default defineConfig({
         },
         config: (md) => {
             md.use(markdownItVideo, {
-                bilibili: {width: '100%', height: '387px'}
+                bilibili: { width: '100%', height: '387px' }
             })
         },
 

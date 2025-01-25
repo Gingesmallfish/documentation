@@ -3,6 +3,7 @@ import "medium-zoom/dist/style.css";
 import type { Theme } from "vitepress";
 import { inBrowser, useRoute, useData } from "vitepress";
 import DefaultTheme from "vitepress/theme";
+import Timeline from "./componets/Timeline.vue";
 import { h, onMounted, watch, nextTick, provide } from "vue";
 import { ZommeOptions } from "../Types/sidebarNavTypes";
 import "./tailwind.css";
@@ -10,7 +11,9 @@ import "./tailwind.css";
 export default {
   extends: DefaultTheme,
   Layout: () => {
-    return h(DefaultTheme.Layout, null, {});
+    return h(DefaultTheme.Layout, null, {
+      'sidebar-bottom': () => h(Timeline),
+    });
   },
   enhanceApp({ app, router, siteData }) {},
   setup() {

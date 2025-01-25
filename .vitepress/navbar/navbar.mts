@@ -21,9 +21,18 @@ const nav: NavItem[] = [
             items: [
                 { text: 'HTML', link: '/基础知识/html/01.基础知识' },
                 { text: 'CSS', link: '/基础知识/CSS/01.css基础' },
-                { text: 'JS', link: '基础知识/JS/简介' }
+                { text: 'JS', link: '基础知识/JS/介绍' }
             ]
         }]
+    },
+    {
+        text: 'Node教程',
+        items: [{
+            text: 'Node教程',
+            items: [
+                { text: 'Node基础', link: '/Node/01.介绍' },
+            ]
+        }],
     },
     {
         text: '⚒ 工具',
@@ -34,7 +43,7 @@ const nav: NavItem[] = [
             ]
         }]
     },
-    {text:'前端学习路线',link:'/前端学习路线/01'}
+    { text: '前端学习路线', link: '/前端学习路线/01' }
 ]
 
 

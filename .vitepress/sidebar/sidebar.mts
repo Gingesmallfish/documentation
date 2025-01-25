@@ -67,8 +67,8 @@ const sidebar: SidebarConfig = {
         ]
 
     }, {
-        text: "动画加移动端"
-        , collapsed: false,
+        text: "动画加移动端",
+        collapsed: false,
         items: [
             { text: "动画", link: "/基础知识/CSS/Phon/06.动画基础" },
             { text: "空间转换", link: "/基础知识/CSS/Phon/07.空间转换" },
@@ -89,9 +89,20 @@ const sidebar: SidebarConfig = {
         text: 'JavaScript教程',
         collapsed: true,
         items: [
-            { text: '简介', link: '/基础知识/JS/简介' }
+            { text: '简介', link: '/基础知识/JS/介绍' }
         ]
     }],
+
+    '/Node/': [{
+        text: 'Node教程',
+        collapsed: true,
+        items: [
+            { text: '简介', link: '/Node/01.介绍' }
+        ]
+    }],
+
+
+
     '/工具/Git/': [{
         text: 'Git代码提交规范',
         collapsed: true,
