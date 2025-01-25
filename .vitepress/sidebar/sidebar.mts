@@ -89,7 +89,15 @@ const sidebar: SidebarConfig = {
         text: 'JavaScript教程',
         collapsed: true,
         items: [
-            { text: '简介', link: '/基础知识/JS/介绍' }
+            { text: '简介', link: '/基础知识/JS/介绍' },
+            { text: '语法', link: '/基础知识/JS/语法' },
+
+        ]
+    }, {
+        text: '数据类型',
+        collapsed: true,
+        items: [
+             { text: '数据类型', link: '/基础知识/JS/数据结构' },
         ]
     }],
 
@@ -97,7 +105,7 @@ const sidebar: SidebarConfig = {
         text: 'Node教程',
         collapsed: true,
         items: [
-            { text: '简介', link: '/Node/01.介绍' }
+            { text: '简介', link: '/Node/01.介绍' },
         ]
     }],
 

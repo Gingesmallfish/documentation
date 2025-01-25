@@ -2,7 +2,7 @@ import { defineConfig, serve } from 'vitepress'
 import Nav from './navbar/navbar.mts';
 import sidebarNavItem from './sidebar/sidebar.mts';
 import markdownItVideo from "@vrcd-community/markdown-it-video";
-
+import vue from '@vitejs/plugin-vue'
 
 export default defineConfig({
     base: "/documentation/",
@@ -35,6 +35,10 @@ export default defineConfig({
             { rel: 'preconnect', href: 'https://fonts.googleapis.com' }
         ],
     ],
+
+    vue: {
+        plugins: [vue()],
+    },
 
     // 代码高亮
     markdown: {
