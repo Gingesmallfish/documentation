@@ -1,5 +1,4 @@
 ---
-# https://vitepress.dev/reference/default-theme-home-page
 layout: home
 
 hero:
@@ -28,5 +27,5 @@ features:
 
 
 ::: tip JS
-console.log("Hello Wrold")
+console.log("Hello Word")
 :::

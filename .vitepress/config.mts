@@ -58,7 +58,7 @@ export default defineConfig({
     // 主题配置
     themeConfig: {
 
-        outlineTitle: '文章目录',
+        outline: '文章目录',
         logo: '/logo.png',
         editLink: {
             // 这里是自己的厂库
@@ -99,8 +99,8 @@ export default defineConfig({
 
         // 首页页脚
         footer: {
-            message: 'Released under the MIT License.',
-            copyright: '姜小鱼版权所有 © 2023-2024 创作不易请尊重他人劳动成果，未经授权禁止转载！'
+            message: 'MIT License Copyright (c) 2025 姜小鱼',
+            copyright: '姜小鱼版权所有 © 2024-2025 创作不易请尊重他人劳动成果，未经授权禁止转载！'
         },
     },
 })

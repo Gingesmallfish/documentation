@@ -6,6 +6,7 @@ import DefaultTheme from "vitepress/theme";
 import Timeline from "./componets/Timeline.vue";
 import { h, onMounted, watch, nextTick, provide } from "vue";
 import { ZommeOptions } from "../Types/sidebarNavTypes";
+import TimeDisplay from "./componets/TimeDisplay.vue";
 import "./tailwind.css";
 
 export default {
@@ -15,7 +16,9 @@ export default {
       'sidebar-bottom': () => h(Timeline),
     });
   },
-  enhanceApp({ app, router, siteData }) {},
+  enhanceApp({ app, router, siteData }) {
+    app.component("TimeDisplay", TimeDisplay);
+  },
   setup() {
     const route = useRoute();
     const { isDark } = useData();
@@ -24,6 +27,8 @@ export default {
       container: document.body,
       zIndex: 9999
     };
+
+
 
     const enableTransitions = () =>
       'startViewTransition' in document &&
