@@ -1,6 +1,6 @@
-import { NavItem } from '../Types/sidebarNavTypes'
+import {NavItem} from '../Types/sidebarNavTypes'
 const nav: NavItem[] = [
-     { component: 'TimeDisplay' },
+    { component: 'TimeDisplay' },
     { text: '🏷 首页', link: '/', activeClass: '首页' },
     {
         text: '📖 博客搭建',
