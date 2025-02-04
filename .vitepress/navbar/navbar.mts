@@ -1,4 +1,13 @@
-import {NavItem} from '../Types/sidebarNavTypes'
+
+interface NavItem {
+    text?: string;
+    link?: string;
+    items?: NavItem[]; // 子菜单
+    activeClass?: string;
+    activeMatch?: string;
+    component?: string;
+}
+
 const nav: NavItem[] = [
     { component: 'TimeDisplay' },
     { text: '🏷 首页', link: '/', activeClass: '首页' },
@@ -36,13 +45,13 @@ const nav: NavItem[] = [
         }],
     },
     {
-      text:'数据库',
-      items:[{
-        text:'数据库',
-        items:[
-          {text:'MongoDB',link:'/数据库/MongoDB/MongoDB学习'},
-        ]
-      }]  
+        text: '数据库',
+        items: [{
+            text: '数据库',
+            items: [
+                { text: 'MongoDB', link: '/数据库/MongoDB/MongoDB学习' },
+            ]
+        }]
     },
     {
         text: '⚒ 工具',

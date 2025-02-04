@@ -1,14 +1,3 @@
-// 定义类型参数 nav
-
-export interface NavItem {
-    text?: string;
-    link?: string;
-    items?: NavItem[]; // 子菜单
-    activeClass?: string;
-    activeMatch?: string;
-    component?: string
-}
-
 /**
  *  菜单项数据类型
  */
