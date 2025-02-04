@@ -6,7 +6,6 @@ export interface NavItem {
     items?: NavItem[]; // 子菜单
     activeClass?: string;
     activeMatch?: string;
-    component?: string
 }
 
 /**

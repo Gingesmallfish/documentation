@@ -36,15 +36,6 @@ const nav: NavItem[] = [
         }],
     },
     {
-      text:'数据库',
-      items:[{
-        text:'数据库',
-        items:[
-          {text:'MongoDB',link:'/数据库/MongoDB/MongoDB学习'},
-        ]
-      }]  
-    },
-    {
         text: '⚒ 工具',
         items: [{
             text: 'Git',
